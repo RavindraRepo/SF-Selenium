@@ -1,0 +1,7 @@
+1406886350232	Extract local variable 'size'
+1406886575855	Extract local variable 'text'
+1406983800586	Extract local variable 'windowHandles'
+1406987424903	Extract local variable 'alert'
+1407004432899	Extract local variable 'findElements'
+1407010352812	Extract local variable 'findElements'
+1407011074154	Extract local variable 'windowHandle'
