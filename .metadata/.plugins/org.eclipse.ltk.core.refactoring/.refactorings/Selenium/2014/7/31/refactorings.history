@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Selenium/extensions/menifest.json&apos; to &apos;manifest.json&apos;" description="Rename resource &apos;menifest.json&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="extensions/menifest.json" name="manifest.json" stamp="1406797781892" updateReferences="true"/>
+</session>

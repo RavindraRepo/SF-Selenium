@@ -1,0 +1,30 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "config_helper.js", "websiteLogon.js", "websiteLogonOTP.js", "OTPList.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "TrueSuite Website Logon Extension.",
+   "homepage_url": "http://www.authentec.com/",
+   "icons": {
+      "128": "images/logo_128.png",
+      "16": "images/logo_16.png",
+      "32": "images/logo_32.png",
+      "48": "images/logo_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUthOBkqenJ8F58vlzUYmxI4ma6alI2/kDWaRaiapQ/BcdKVLe7XeEdl3y51jMIoUxPITjzzX8C14hmU1N7H6u65PQQaqx3n3rUhLMET8I4ySsKZHX9uZigOlmeMUMSuRU82eiKmYEZVg9sCFX4bHufCiec7UQFLMX+9prF67MxQIDAQAB",
+   "manifest_version": 2,
+   "name": "Website Logon",
+   "permissions": [ "tabs" ],
+   "plugins": [ {
+      "path": "npgcwloplugin.dll",
+      "public": true
+   } ],
+   "version": "6.0.200",
+   "web_accessible_resources": [ "images/arrow.png", "images/close.png", "images/error_32.png", "images/pause_32.png", "config.json", "notification.html" ]
+}
