@@ -18,8 +18,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Login extends BaseClass{
-//	@BeforeTest
-	@BeforeMethod
+	@BeforeTest
+//	@BeforeMethod
 	public void Start(){
 		System.out.println("START");
 //		 ChromeSetup();
@@ -28,7 +28,7 @@ public class Login extends BaseClass{
 		 driver.get("https://login.salesforce.com");
 	}
 	
-	@Test
+//	@Test
 	 public void validLogin() throws InterruptedException{
 		System.out.println("Inside validLogin");
 		 driver.findElement(By.id("username")).sendKeys("ravindra@makepositive.com");
@@ -45,7 +45,7 @@ public class Login extends BaseClass{
 		 }
 		 
 	 }
-	@Test
+//	@Test
 	public void Invaliduserpassword() throws InterruptedException{
 		
 		System.out.println("Inside Invaliduserpassword");
@@ -91,7 +91,7 @@ public class Login extends BaseClass{
 	System.out.println("Finished");
 	// Thread.sleep(10000);
 	}
-	@Test(priority=1)
+//	@Test(priority=1)
 	public void ValidSignUp() throws InterruptedException{
 	
 		System.out.println("Inside ValidSignUp");
@@ -128,7 +128,7 @@ public class Login extends BaseClass{
 		
 	}
 //	@Test(dependsOnMethods="ValidSignUp",alwaysRun=true)
-	@Test(priority=2)
+//	@Test(priority=2)
 	public void SignUpError()
 	{
 		System.out.println("Inside SignUpError");
@@ -143,7 +143,7 @@ public class Login extends BaseClass{
 			System.out.println("No error");
 		}
 	}
-	@Test
+//	@Test
 	public void SignUpPlaceholders(){
 		System.out.println("Inside SignUpPlaceholders");
 		driver.findElement(By.linkText("Sign up for free.")).click();
@@ -153,7 +153,7 @@ public class Login extends BaseClass{
 		} 
 		
 	}
-	@Test
+//	@Test
 	public void SigninWithGoogle(){
 		System.out.println("Inside SigninWithGoogle");
 		driver.findElement(By.linkText("Sign up for free.")).click();
@@ -173,7 +173,7 @@ public class Login extends BaseClass{
 		driver.findElement(By.id("UserFirstName")).sendKeys("Ravindra");
 		
 	}
-	@Test
+//	@Test
 	public void ForgotPass(){
 		
 		driver.findElement(By.linkText("Forgot your password?")).click();
@@ -181,7 +181,7 @@ public class Login extends BaseClass{
 		driver.findElement(By.className("loginInputBox")).sendKeys("ravindra.yadavvv@makepositive.com");
 		driver.findElement(By.id("continue")).click();
 	}
-	@Test
+//	@Test
 	public void ForgotPassInvalid(){
 		driver.findElement(By.linkText("Forgot your password?")).click();
 		System.out.println(driver.getTitle());
@@ -190,7 +190,7 @@ public class Login extends BaseClass{
 		String error=driver.findElement(By.id("pw_error")).getText();
 		System.out.println(error);
 	}
-	@Test
+	//@Test
 	public void app() throws InterruptedException
 	{
 		validLogin();
@@ -202,12 +202,15 @@ public class Login extends BaseClass{
 	@Test
 	public void Account() throws InterruptedException{
 		validLogin();
-		driver.findElement(By.xpath("//ul[@id='tabBar']/li/a[text()='Account']")).click();
-		Thread.sleep(4000);
+//		driver.findElement(By.xpath("//ul[@id='tabBar']/li/a[text()='Account']")).click();
+		driver.findElement(By.linkText("Accounts")).click();
+		Thread.sleep(8000);
+		driver.findElement(By.xpath("//input[@title='New']")).click();
+		Thread.sleep(10000);
 		
 	}
-//	@AfterTest
-	@AfterMethod
+	@AfterTest
+//	@AfterMethod
 	public void teardown(){
 		System.out.println("QUIT");
 		driver.quit();
