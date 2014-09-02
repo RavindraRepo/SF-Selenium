@@ -56,6 +56,10 @@ public class AgileForce1 {
 		System.out.println("End Sign in section");
 		System.out.println("this one is to test");
 		System.out.println("This is to conflict");
+<<<<<<< HEAD
+=======
+		System.out.println("this one is to test conflict");
+>>>>>>> Repo4
 		
 	}
 }
