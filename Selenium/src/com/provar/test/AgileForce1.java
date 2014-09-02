@@ -53,6 +53,7 @@ public class AgileForce1 {
 		driver.switchTo().defaultContent();
 //		driver.findElement(By.xpath("//input[@title='Save']")).click();
 		driver.findElement(By.xpath("//input[@title='Save']")).click();
+		System.out.println("End Sign in section");
 		
 	}
 }
