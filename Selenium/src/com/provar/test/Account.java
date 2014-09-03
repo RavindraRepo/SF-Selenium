@@ -38,6 +38,10 @@ public class Account extends Login{
 		sel.selectByVisibleText("Hot");
 		
 	System.out.println("Function ends here for u");
+<<<<<<< HEAD
+=======
+	System.out.println("Feature branch");
+>>>>>>> Feature Branch
 	}
 
 }
