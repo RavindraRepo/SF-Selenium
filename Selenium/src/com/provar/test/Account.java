@@ -20,9 +20,11 @@ public class Account extends Login{
 		
 	}
 	public void lookup(){
-		String windowHandle = driver.getWindowHandle();
+		System.out.println("Inside Lookup");	
+	String windowHandle = driver.getWindowHandle();
 		driver.findElement(By.className("lookupIcon")).click();
 		driver.getWindowHandles();
+	
 		
 	}
 	
