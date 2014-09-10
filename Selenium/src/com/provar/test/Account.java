@@ -13,7 +13,9 @@ public class Account extends Login{
 		validLogin();
 //		driver.findElement(By.xpath("//ul[@id='tabBar']/li/a[text()='Account']")).click();
 		driver.findElement(By.linkText("Accounts")).click();
+		System.out.println("sleeping...");
 		Thread.sleep(8000);
+
 	
 		
 	}
