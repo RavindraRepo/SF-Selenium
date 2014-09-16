@@ -13,7 +13,9 @@ public class Account extends Login{
 		validLogin();
 //		driver.findElement(By.xpath("//ul[@id='tabBar']/li/a[text()='Account']")).click();
 		driver.findElement(By.linkText("Accounts")).click();
+		System.out.println("sleeping...");
 		Thread.sleep(8000);
+
 	
 		
 	}
@@ -40,7 +42,14 @@ public class Account extends Login{
 		sel.selectByVisibleText("Hot");
 		
 	System.out.println("Function ends here for u");
+<<<<<<< HEAD
 System.out.println("Function ends here for u");
+=======
+<<<<<<< HEAD
+=======
+	System.out.println("Feature branch");
+>>>>>>> Feature Branch
+>>>>>>> 4a3ff5f31b13a75a74e63fc20fe1df056c5b77c0
 	}
 
 }
